@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 
 import { SiteShell } from "@/components/site-shell";
 import { siteConfig } from "@/data/site";
 
 import "./globals.css";
-
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist-sans",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -34,11 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      className={`${geist.variable} scroll-smooth`}
-      lang="en"
-      suppressHydrationWarning
-    >
+    <html className="scroll-smooth" lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-white text-zinc-900 antialiased transition-colors dark:bg-zinc-900 dark:text-zinc-100">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <SiteShell>{children}</SiteShell>

@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #18181b;
-  --font-sans: var(--font-geist-sans);
+  --font-sans: "Inter", "Segoe UI", sans-serif;
 }
 
 html {
