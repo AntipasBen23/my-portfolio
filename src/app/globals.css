@@ -1,26 +1,140 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --foreground: #18181b;
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--background);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.content p,
+.content hr,
+.content pre,
+.content dl {
+  margin-bottom: 1.25rem;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  position: relative;
+  margin-bottom: 1.25rem;
+  padding-top: 0.5rem;
+  color: rgb(15 23 42);
+  font-weight: 700;
+}
+
+.dark .content h1,
+.dark .content h2,
+.dark .content h3,
+.dark .content h4,
+.dark .content h5,
+.dark .content h6 {
+  color: rgb(244 244 245);
+}
+
+.content h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.content h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content blockquote {
+  margin: 1.75rem 0 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(226 232 240);
+  padding: 1.5rem 2rem;
+  color: rgb(71 85 105);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.dark .content blockquote {
+  border-color: rgb(63 63 70);
+  color: rgb(161 161 170);
+}
+
+.content ol,
+.content ul {
+  margin-bottom: 1.25rem;
+  margin-left: 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.content ol {
+  list-style-type: decimal;
+}
+
+.content ul {
+  list-style-type: disc;
+}
+
+.content code {
+  border-radius: 0.5rem;
+  border: 1px solid rgb(226 232 240);
+  background: rgb(248 250 252);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.95em;
+}
+
+.dark .content code {
+  border-color: rgb(63 63 70);
+  background: rgb(39 39 42);
+}
+
+.content pre {
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(226 232 240);
+  background: rgb(248 250 252);
+  padding: 1rem 1.25rem;
+}
+
+.dark .content pre {
+  border-color: rgb(63 63 70);
+  background: rgb(24 24 27);
+}
+
+.content pre code {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.content time {
+  font-variant-numeric: tabular-nums;
 }
