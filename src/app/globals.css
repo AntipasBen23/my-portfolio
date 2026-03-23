@@ -4,8 +4,21 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #18181b;
+  --foreground: #0f172a;
+  --heading: #0f172a;
+  --muted: #64748b;
+  --border: #e5e7eb;
+  --surface: #f8fafc;
   --font-sans: "Inter", "Segoe UI", sans-serif;
+}
+
+.dark {
+  --background: #18181b;
+  --foreground: #f4f4f5;
+  --heading: #f4f4f5;
+  --muted: #a1a1aa;
+  --border: #3f3f46;
+  --surface: #27272a;
 }
 
 html {
@@ -43,17 +56,8 @@ a {
   position: relative;
   margin-bottom: 1.25rem;
   padding-top: 0.5rem;
-  color: rgb(15 23 42);
+  color: var(--heading);
   font-weight: 700;
-}
-
-.dark .content h1,
-.dark .content h2,
-.dark .content h3,
-.dark .content h4,
-.dark .content h5,
-.dark .content h6 {
-  color: rgb(244 244 245);
 }
 
 .content h1 {
@@ -74,16 +78,11 @@ a {
 .content blockquote {
   margin: 1.75rem 0 1.25rem;
   border-radius: 0.5rem;
-  border: 1px solid rgb(226 232 240);
+  border: 1px solid var(--border);
   padding: 1.5rem 2rem;
-  color: rgb(71 85 105);
+  color: var(--muted);
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.dark .content blockquote {
-  border-color: rgb(63 63 70);
-  color: rgb(161 161 170);
 }
 
 .content ol,
@@ -104,29 +103,19 @@ a {
 
 .content code {
   border-radius: 0.5rem;
-  border: 1px solid rgb(226 232 240);
-  background: rgb(248 250 252);
+  border: 1px solid var(--border);
+  background: var(--surface);
   padding: 0.25rem 0.5rem;
   font-size: 0.95em;
-}
-
-.dark .content code {
-  border-color: rgb(63 63 70);
-  background: rgb(39 39 42);
 }
 
 .content pre {
   margin-bottom: 1.25rem;
   overflow-x: auto;
   border-radius: 0.75rem;
-  border: 1px solid rgb(226 232 240);
-  background: rgb(248 250 252);
+  border: 1px solid var(--border);
+  background: var(--surface);
   padding: 1rem 1.25rem;
-}
-
-.dark .content pre {
-  border-color: rgb(63 63 70);
-  background: rgb(24 24 27);
 }
 
 .content pre code {

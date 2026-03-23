@@ -6,12 +6,12 @@ export default function HomePage() {
   return (
     <article className="flex flex-col gap-3">
       <header>
-        <h2 className="text-2xl font-extrabold text-slate-900 dark:text-emerald-500">
+        <h2 className="text-2xl font-extrabold text-slate-950 dark:text-emerald-500">
           {siteConfig.introTitle}
         </h2>
       </header>
 
-      <section className="content text-lg text-slate-800 dark:text-zinc-200">
+      <section className="content text-lg leading-[1.72] text-slate-950 dark:text-zinc-100">
         <p>{siteConfig.intro[0]}</p>
         <p>{siteConfig.intro[1]}</p>
         <p>{siteConfig.intro[2]}</p>

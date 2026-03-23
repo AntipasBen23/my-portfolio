@@ -43,7 +43,7 @@ function SocialLinks({ compact = false }: { compact?: boolean }) {
           <li key={link.label}>
             <a
               aria-label={link.label}
-              className="text-slate-500 transition hover:text-slate-700 dark:text-zinc-400 dark:hover:text-zinc-100"
+              className="text-slate-900 transition hover:text-slate-700 dark:text-zinc-100 dark:hover:text-zinc-300"
               href={link.href}
               rel="noreferrer"
               target="_blank"
@@ -123,7 +123,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                       <li
                         className={`whitespace-nowrap transition ${
                           active
-                            ? "text-slate-900 dark:text-zinc-100"
+                            ? "text-slate-950 dark:text-zinc-100"
                             : "hover:text-slate-700 dark:hover:text-zinc-200"
                         }`}
                         key={item.href}

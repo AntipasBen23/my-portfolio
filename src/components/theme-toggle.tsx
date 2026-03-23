@@ -56,7 +56,7 @@ export function ThemeToggle() {
   return (
     <button
       aria-label="Toggle dark mode"
-      className="rounded-lg p-2 text-slate-500 shadow-sm ring-1 ring-slate-200 transition hover:bg-slate-100 hover:text-slate-700 hover:shadow-md dark:text-zinc-400 dark:ring-zinc-700 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+      className="rounded-lg bg-white p-2 text-slate-500 shadow-sm ring-1 ring-slate-200 transition hover:bg-slate-50 hover:text-slate-700 hover:shadow-md dark:bg-transparent dark:text-zinc-400 dark:ring-transparent dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
       onClick={() => {
         setTheme(nextTheme);
         document.documentElement.classList.toggle("dark", nextTheme === "dark");
