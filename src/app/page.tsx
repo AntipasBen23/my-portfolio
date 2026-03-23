@@ -17,7 +17,7 @@ export default function HomePage() {
         <p>{siteConfig.intro[2]}</p>
         <p>{siteConfig.intro[3]}</p>
         <p>
-          Currently, I am a freelancer on contract at{" "}
+          Currently, I am a freelancer at{" "}
           <a href={siteConfig.experienceLinks[0].href}>
             {siteConfig.experienceLinks[0].label}
           </a>{" "}
@@ -25,7 +25,7 @@ export default function HomePage() {
           <a href={siteConfig.experienceLinks[1].href}>
             {siteConfig.experienceLinks[1].label}
           </a>
-          .
+          . I am actively seeking a full-time role.
         </p>
         <p>{siteConfig.intro[5]}</p>
         <p>
