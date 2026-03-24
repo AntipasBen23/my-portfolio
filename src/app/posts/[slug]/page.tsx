@@ -72,12 +72,12 @@ export default async function PostDetailPage(props: PageProps<"/posts/[slug]">) 
             if (block.type === "image") {
               return (
                 <figure
-                  className="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-zinc-700 dark:bg-zinc-800/60"
+                  className="mx-auto my-6 max-w-2xl overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50/60 dark:border-zinc-700/80 dark:bg-zinc-800/40"
                   key={`${block.type}-${index}`}
                 >
                   <Image
                     alt={block.alt}
-                    className="h-auto w-full object-cover"
+                    className="block h-auto w-full object-contain"
                     height={900}
                     src={block.src}
                     width={1600}
