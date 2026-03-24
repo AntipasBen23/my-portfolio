@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { blogPosts } from "@/data/site";
@@ -47,25 +48,87 @@ export default async function PostDetailPage(props: PageProps<"/posts/[slug]">) 
         </div>
       </header>
 
-      {post.content.map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
-      ))}
+      {post.blocks ? (
+        <>
+          {post.blocks.map((block, index) => {
+            if (block.type === "paragraph") {
+              return <p key={`${block.type}-${index}`}>{block.value}</p>;
+            }
 
-      <h3>Patterns that consistently help</h3>
-      <ul>
-        <li>Avoid browser APIs directly in component render paths.</li>
-        <li>Make sure the first server and client render produce identical markup.</li>
-        <li>Move timestamps, random values, and viewport logic behind client-only effects.</li>
-        <li>Use framework tools like dynamic imports carefully for DOM-heavy libraries.</li>
-        <li>Test production builds locally before deploying.</li>
-      </ul>
+            if (block.type === "heading") {
+              return <h3 key={`${block.type}-${index}`}>{block.value}</h3>;
+            }
 
-      <h3>Example fixes</h3>
-      {post.codeSamples?.map((sample) => (
-        <pre key={sample.code}>
-          <code>{sample.code}</code>
-        </pre>
-      ))}
+            if (block.type === "list") {
+              return (
+                <ul key={`${block.type}-${index}`}>
+                  {block.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              );
+            }
+
+            if (block.type === "image") {
+              return (
+                <figure
+                  className="my-8 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-zinc-700 dark:bg-zinc-800/60"
+                  key={`${block.type}-${index}`}
+                >
+                  <Image
+                    alt={block.alt}
+                    className="h-auto w-full object-cover"
+                    height={900}
+                    src={block.src}
+                    width={1600}
+                  />
+                </figure>
+              );
+            }
+
+            if (block.type === "code") {
+              return (
+                <pre key={`${block.type}-${index}`}>
+                  <code>{block.code}</code>
+                </pre>
+              );
+            }
+
+            return null;
+          })}
+        </>
+      ) : (
+        <>
+          {post.content.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+
+          <h3>Patterns that consistently help</h3>
+          <ul>
+            <li>Avoid browser APIs directly in component render paths.</li>
+            <li>
+              Make sure the first server and client render produce identical
+              markup.
+            </li>
+            <li>
+              Move timestamps, random values, and viewport logic behind
+              client-only effects.
+            </li>
+            <li>
+              Use framework tools like dynamic imports carefully for DOM-heavy
+              libraries.
+            </li>
+            <li>Test production builds locally before deploying.</li>
+          </ul>
+
+          <h3>Example fixes</h3>
+          {post.codeSamples?.map((sample) => (
+            <pre key={sample.code}>
+              <code>{sample.code}</code>
+            </pre>
+          ))}
+        </>
+      )}
 
       <h3>Tags</h3>
       <p>{post.tags.join(" · ")}</p>
