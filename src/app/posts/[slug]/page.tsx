@@ -130,8 +130,6 @@ export default async function PostDetailPage(props: PageProps<"/posts/[slug]">) 
         </>
       )}
 
-      <h3>Tags</h3>
-      <p>{post.tags.join(" · ")}</p>
     </article>
   );
 }
