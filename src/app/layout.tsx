@@ -28,7 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth" lang="en" suppressHydrationWarning>
+    <html
+      className="scroll-smooth"
+      data-scroll-behavior="smooth"
+      lang="en"
+      suppressHydrationWarning
+    >
       <body className="min-h-screen bg-white text-zinc-900 antialiased transition-colors dark:bg-zinc-900 dark:text-zinc-100">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <SiteShell>{children}</SiteShell>
