@@ -3,7 +3,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import { blogPosts } from "@/data/site";
-import { formatLongDate } from "@/lib/content";
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -44,7 +43,6 @@ export default async function PostDetailPage(props: PageProps<"/posts/[slug]">) 
         <div className="flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500 dark:text-zinc-400">
           <span>Antipas Ben</span>
           <span>{post.readTime}</span>
-          <time dateTime={post.date}>{formatLongDate(post.date)}</time>
         </div>
       </header>
 

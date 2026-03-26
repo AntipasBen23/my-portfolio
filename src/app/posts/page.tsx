@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { ReadMoreLink } from "@/components/site-shell";
 import { blogPosts } from "@/data/site";
-import { formatLongDate } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Posts",
@@ -34,7 +33,6 @@ export default function PostsPage() {
               <Link href={`/posts/${post.slug}`}>{post.title}</Link>
             </h3>
             <div className="flex gap-3 text-sm font-semibold text-slate-500 dark:text-zinc-400">
-              <time dateTime={post.date}>{formatLongDate(post.date)}</time>
               <span>{post.readTime}</span>
             </div>
             <div className="text-slate-600 dark:text-zinc-300">{post.excerpt}</div>
