@@ -21,11 +21,7 @@ export default function DevDoodlesPage() {
           Dev Doodles
         </h2>
         <div className="content text-lg text-slate-900 dark:text-zinc-200">
-          <p>
-            A collection of my <em>dev doodles</em> and in-progress ideas. These
-            are placeholders for now, and I&apos;ll keep expanding this section as
-            new experiments turn into public work.
-          </p>
+          <p>A collection of my <em>dev doodles</em>.</p>
         </div>
       </div>
 
