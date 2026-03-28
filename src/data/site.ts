@@ -489,5 +489,7 @@ export const devDoodles: Doodle[] = [
     why: "Verification engines can detect risk automatically, but analysts still need a clear workflow to inspect why a case failed.",
     href: "https://github.com/AntipasBen23/deepidv-feature-demo",
     liveHref: "https://deepidv-feature-demo.netlify.app/",
+    imageSrc: "/deepdiv.png",
+    imageAlt: "deepidv Case Inspector investigation console screenshot",
   },
 ];
