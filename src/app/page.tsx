@@ -14,7 +14,7 @@ export default function HomePage() {
         <p>{siteConfig.intro[1]}</p>
         <p>{siteConfig.intro[2]}</p>
         <p>
-          Currently, I work as on contract at{" "}
+          Currently, I work on contract at{" "}
           <a href={siteConfig.experienceLinks[0].href}>
             {siteConfig.experienceLinks[0].label}
           </a>{" "}
