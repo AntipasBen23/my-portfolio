@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { siteConfig } from "@/data/site";
 
 export default function HomePage() {
@@ -25,6 +27,9 @@ export default function HomePage() {
           .
         </p>
         <p>{siteConfig.intro[4]}</p>
+        <p>
+          Check out my <Link href="/posts">blog</Link>.
+        </p>
       </section>
     </article>
   );
