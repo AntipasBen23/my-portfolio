@@ -463,8 +463,8 @@ export const devDoodles: Doodle[] = [
     slug: "mater-ai-smart-prioritization-engine",
     title: "Mater-AI Smart Prioritization Engine",
     description:
-      "A frontend prototype for intelligently ranking AI-generated thermoelectric material candidates using weighted scoring, ROI thinking, synthesis feasibility, and lab allocation signals. It turns manual spreadsheet triage into a real-time prioritization workflow for discovery teams.",
-    why: "I built it to close the gap between AI candidate generation and actual lab execution. Mater-AI was accelerating discovery, but prioritization, synthesis planning, and resource tradeoffs were still manual. This concept shows how decision cycles can shrink from days to minutes while helping teams spend lab time and runway more efficiently.",
+      "A smart prioritization dashboard for ranking AI-generated thermoelectric material candidates.",
+    why: "Mater-AI could generate candidates quickly, but deciding what to synthesize next was still too manual.",
     href: "https://github.com/AntipasBen23/mater-ai-feature-demo",
     liveHref: "https://mater-ai-feature-demo.netlify.app/",
     imageSrc: "/mater.png",
