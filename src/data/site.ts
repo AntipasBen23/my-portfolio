@@ -45,11 +45,13 @@ export type BlogPost = {
 export type Doodle = {
   slug: string;
   title: string;
-  date: string;
+  date?: string;
   description: string;
   why: string;
   href?: string;
   liveHref?: string;
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 export const siteConfig = {
@@ -458,17 +460,19 @@ export const blogPosts: BlogPost[] = [
 
 export const devDoodles: Doodle[] = [
   {
-    slug: "signalboard",
-    title: "signalboard",
-    date: "March 2026",
+    slug: "mater-ai-smart-prioritization-engine",
+    title: "Mater-AI Smart Prioritization Engine",
     description:
-      "A placeholder for an internal dashboard concept focused on surfacing key engineering signals in one clean interface.",
-    why: "I want a space to collect small product experiments and polished engineering ideas as they take shape.",
+      "A frontend prototype for intelligently ranking AI-generated thermoelectric material candidates using weighted scoring, ROI thinking, synthesis feasibility, and lab allocation signals. It turns manual spreadsheet triage into a real-time prioritization workflow for discovery teams.",
+    why: "I built it to close the gap between AI candidate generation and actual lab execution. Mater-AI was accelerating discovery, but prioritization, synthesis planning, and resource tradeoffs were still manual. This concept shows how decision cycles can shrink from days to minutes while helping teams spend lab time and runway more efficiently.",
+    href: "https://github.com/AntipasBen23/mater-ai-feature-demo",
+    liveHref: "https://mater-ai-feature-demo.netlify.app/",
+    imageSrc: "/mater.png",
+    imageAlt: "Mater-AI Smart Prioritization Engine dashboard screenshot",
   },
   {
     slug: "flowcache",
     title: "flowcache",
-    date: "February 2026",
     description:
       "A placeholder project for exploring faster data access patterns and caching strategies in full-stack applications.",
     why: "Many good side projects start as scratchpad ideas before they become public tools, and this page will grow with them.",
@@ -476,7 +480,6 @@ export const devDoodles: Doodle[] = [
   {
     slug: "traceview",
     title: "traceview",
-    date: "January 2026",
     description:
       "A placeholder observability experiment aimed at making reliability workflows easier to reason about.",
     why: "I like keeping a visible trail of ideas that blend engineering, infrastructure, and product thinking.",

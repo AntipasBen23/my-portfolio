@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 import {
   ExternalLinkIcon,
@@ -72,14 +73,28 @@ export default function DevDoodlesPage() {
                 ) : null}
               </div>
 
-              <div className="text-sm font-semibold text-slate-500 dark:text-zinc-400">
-                <time>{doodle.date}</time>
-              </div>
+              {doodle.date ? (
+                <div className="text-sm font-semibold text-slate-500 dark:text-zinc-400">
+                  <time>{doodle.date}</time>
+                </div>
+              ) : null}
             </div>
 
-            <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-6 py-10 text-center text-sm font-medium text-slate-500 dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-400">
-              Placeholder preview for {doodle.title}
-            </div>
+            {doodle.imageSrc ? (
+              <figure className="overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50/60 dark:border-zinc-700/80 dark:bg-zinc-800/40">
+                <Image
+                  alt={doodle.imageAlt ?? `${doodle.title} screenshot`}
+                  className="block h-auto w-full object-contain"
+                  height={900}
+                  src={doodle.imageSrc}
+                  width={1600}
+                />
+              </figure>
+            ) : (
+              <div className="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-6 py-10 text-center text-sm font-medium text-slate-500 dark:border-zinc-700 dark:bg-zinc-800/60 dark:text-zinc-400">
+                Placeholder preview for {doodle.title}
+              </div>
+            )}
 
             <ul className="ml-4 list-inside list-disc space-y-2 text-base text-slate-700 dark:text-zinc-300">
               <li>
