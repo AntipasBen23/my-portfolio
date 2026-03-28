@@ -59,7 +59,7 @@ export const siteConfig = {
     "Antipas Ben is a full-stack engineer building scalable systems across frontend, backend, data, and reliability.",
   introTitle: "Hello, I'm Antipas Ben.",
   intro: [
-    "I work across the stack - from frontend to backend to infrastructure - building systems that need to perform reliably in real-world conditions.",
+    "I work across the stack, from frontend to backend to infrastructure, building systems that need to perform reliably in real-world conditions.",
     "My experience spans application development, distributed systems, and production infrastructure, with a focus on performance, system reliability, and clean architecture. I've worked on multi-vendor platforms and real-time systems, improving system efficiency and reducing operational friction.",
     "I'm particularly interested in complex engineering problems where correctness, scalability, and system design matter.",
     "Currently, I work on contract at Rhovic and previously worked at Porpop.",
