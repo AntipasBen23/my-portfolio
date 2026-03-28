@@ -492,4 +492,15 @@ export const devDoodles: Doodle[] = [
     imageSrc: "/deepdiv.png",
     imageAlt: "deepidv Case Inspector investigation console screenshot",
   },
+  {
+    slug: "loovi-trajectory-preview-module",
+    title: "LOOVI Trajectory Preview Module",
+    description:
+      "A longitudinal biomarker projection module for previewing trend direction and simple health scenarios.",
+    why: "Health dashboards often show history clearly, but they rarely help users see where those biomarker trends are heading.",
+    href: "https://github.com/AntipasBen23/loovi-feature-demo",
+    liveHref: "https://loovi-feature-demo.netlify.app/",
+    imageSrc: "/loovi.png",
+    imageAlt: "LOOVI trajectory preview biomarker dashboard screenshot",
+  },
 ];
