@@ -482,10 +482,12 @@ export const devDoodles: Doodle[] = [
     imageAlt: "Allude video recording proof-of-concept screenshot",
   },
   {
-    slug: "traceview",
-    title: "traceview",
+    slug: "deepidv-case-inspector",
+    title: "deepidv Case Inspector",
     description:
-      "A placeholder observability experiment aimed at making reliability workflows easier to reason about.",
-    why: "I like keeping a visible trail of ideas that blend engineering, infrastructure, and product thinking.",
+      "A flagged-case investigation console for reviewing identity verification signals, evidence, and audit trails.",
+    why: "Verification engines can detect risk automatically, but analysts still need a clear workflow to inspect why a case failed.",
+    href: "https://github.com/AntipasBen23/deepidv-feature-demo",
+    liveHref: "https://deepidv-feature-demo.netlify.app/",
   },
 ];
