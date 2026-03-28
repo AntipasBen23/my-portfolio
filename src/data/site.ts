@@ -471,11 +471,15 @@ export const devDoodles: Doodle[] = [
     imageAlt: "Mater-AI Smart Prioritization Engine dashboard screenshot",
   },
   {
-    slug: "flowcache",
-    title: "flowcache",
+    slug: "allude-video-recording-poc",
+    title: "Allude Video Recording POC",
     description:
-      "A placeholder project for exploring faster data access patterns and caching strategies in full-stack applications.",
-    why: "Many good side projects start as scratchpad ideas before they become public tools, and this page will grow with them.",
+      "A browser-based video recording POC with IndexedDB persistence and upload failure handling.",
+    why: "It started as an interview task, and I wanted to build something reliable instead of a fragile demo.",
+    href: "https://github.com/AntipasBen23/Allude-Task-Feature",
+    liveHref: "https://allude-task.netlify.app/",
+    imageSrc: "/allude.png",
+    imageAlt: "Allude video recording proof-of-concept screenshot",
   },
   {
     slug: "traceview",
