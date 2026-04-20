@@ -24,7 +24,11 @@ export default function HomePage() {
           <a href={siteConfig.experienceLinks[1].href}>
             {siteConfig.experienceLinks[1].label}
           </a>
-          .
+          ,{" "}
+          <a href={siteConfig.experienceLinks[2].href}>
+            {siteConfig.experienceLinks[2].label}
+          </a>
+          , and a number of freelance engagements over the years.
         </p>
         <p>
           On the side, I am building{" "}

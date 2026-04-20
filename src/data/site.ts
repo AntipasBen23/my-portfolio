@@ -80,6 +80,10 @@ export const siteConfig = {
       label: "Porpop",
       href: "https://porpop.com/",
     },
+    {
+      label: "Brmarine",
+      href: "https://brminingmex.com/",
+    },
   ] satisfies ExperienceLink[],
   socialLinks: [
     {
