@@ -37,7 +37,7 @@ export default function HomePage() {
           </a>
           , an AI-driven system for automating end-to-end content workflows. It
           treats content as a system, planning, generating, and adapting
-          through feedback loops. Early beta. I welcome feedback from builders
+          through feedback loops. It&apos;s currently in early beta. I welcome feedback from builders
           and operators.
         </p>
         <p>{siteConfig.intro[4]}</p>
