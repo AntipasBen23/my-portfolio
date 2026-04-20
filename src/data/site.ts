@@ -65,9 +65,12 @@ export const siteConfig = {
     "My experience spans application development, distributed systems, and production infrastructure, with a focus on performance, system reliability, and clean architecture. I've worked on multi-vendor platforms and real-time systems, improving system efficiency and reducing operational friction.",
     "I'm particularly interested in complex engineering problems where correctness, scalability, and system design matter.",
     "Currently, I work on contract at Rhovic and previously worked at Porpop.",
-    "On the side, I'm solo-building Furci.ai — an AI-powered social media manager that replaces the need for a human social media hire. You brief it once; it handles content creation, scheduling, trend monitoring, and community engagement entirely on autopilot. It's early stage and currently in beta.",
     "Outside of engineering, I play the piano and enjoy reading.",
   ],
+  personalProjectLink: {
+    label: "Furci.ai",
+    href: "https://furciai.com/",
+  },
   experienceLinks: [
     {
       label: "Rhovic",

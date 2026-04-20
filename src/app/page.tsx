@@ -26,6 +26,17 @@ export default function HomePage() {
           </a>
           .
         </p>
+        <p>
+          On the side, I am building{" "}
+          <a href={siteConfig.personalProjectLink.href}>
+            {siteConfig.personalProjectLink.label}
+          </a>
+          , my own personal product. It is an AI-powered social media manager
+          that replaces the need for a human social media hire. You brief it
+          once and it handles content creation, scheduling, trend monitoring,
+          and community engagement entirely on autopilot. The product is early
+          stage and currently in beta.
+        </p>
         <p>{siteConfig.intro[4]}</p>
         <p>
           Check out my <Link href="/posts">blog</Link>.
