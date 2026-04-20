@@ -68,7 +68,7 @@ export const siteConfig = {
     "Outside of engineering, I play the piano and enjoy reading.",
   ],
   personalProjectLink: {
-    label: "Furci.ai",
+    label: "Furci ai",
     href: "https://furciai.com/",
   },
   experienceLinks: [

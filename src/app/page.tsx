@@ -31,15 +31,13 @@ export default function HomePage() {
           , and a number of freelance engagements over the years.
         </p>
         <p>
-          On the side, I am building{" "}
+          On the side, I&apos;m building{" "}
           <a href={siteConfig.personalProjectLink.href}>
             {siteConfig.personalProjectLink.label}
           </a>
-          , my own personal product. It is an AI-powered social media manager
-          that replaces the need for a human social media hire. You brief it
-          once and it handles content creation, scheduling, trend monitoring,
-          and community engagement entirely on autopilot. The product is early
-          stage and currently in beta.
+          , an autonomous content system that plans, generates, and iterates on
+          social output. Currently in early beta. I welcome feedback from
+          people working on content systems.
         </p>
         <p>{siteConfig.intro[4]}</p>
         <p>
