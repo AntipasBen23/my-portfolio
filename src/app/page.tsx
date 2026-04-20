@@ -35,9 +35,10 @@ export default function HomePage() {
           <a href={siteConfig.personalProjectLink.href}>
             {siteConfig.personalProjectLink.label}
           </a>
-          , an autonomous content system that plans, generates, and iterates on
-          social output. Currently in early beta. I welcome feedback from
-          people working on content systems.
+          , an AI-driven system for automating end-to-end content workflows. It
+          treats content as a system, planning, generating, and adapting
+          through feedback loops. Early beta. I welcome feedback from builders
+          and operators.
         </p>
         <p>{siteConfig.intro[4]}</p>
         <p>
