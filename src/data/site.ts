@@ -73,15 +73,15 @@ export const siteConfig = {
   },
   experienceLinks: [
     {
-      label: "Rhovic",
-      href: "https://berylrhovic.com",
+      label: "Brmarine",
+      href: "https://www.brmarineenergy.com/",
     },
     {
       label: "Porpop",
       href: "https://porpop.com/",
     },
     {
-      label: "Brmarine",
+      label: "miningmex",
       href: "https://brminingmex.com/",
     },
   ] satisfies ExperienceLink[],
